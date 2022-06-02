@@ -11,11 +11,10 @@ const PORT = 8008;
 //nyoba woocommerce client
 const WooCommerceRestApi = require("@woocommerce/woocommerce-rest-api").default;
 const WooCommerce = new WooCommerceRestApi({
-	          url: 'https://ilkomers.com', // Your store URL
-	          consumerKey: 'ck_e6f90a34e8cc77bd1d948fdaaf0905135d158fff', // Your consumer key
-	          consumerSecret: 'cs_babfaef91a00779d5cedfe148b64613067f877cd', // Your consumer secret
-	          version: 'wc/v3' // WooCommerce WP REST API version
-});
+	          url: 'https://ilkomers.com', 
+	          consumerKey: 'ck_e6f90a34e8cc77bd1d948fdaaf0905135d158fff', 
+	          consumerSecret: 'cs_babfaef91a00779d5cedfe148b64613067f877cd', 
+	          version: 'wc/v3' 
 
 function katalog(noCust){
 WooCommerce.get("products")
